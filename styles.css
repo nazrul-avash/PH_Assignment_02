@@ -213,11 +213,52 @@ a {
 }
 .card{
   background-color: #250D44;
-  border-radius: 25px;
+  border-radius: 20px;
   text-align: left;
-  padding: 20px;
+  overflow: hidden;
+  
+  
 }
 
+.video-wrapper iframe{
+  width: 100%;
+  
+}
+.card-content{
+  padding:1.5rem;
+}
+.time-logo{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#host{
+  max-width: 1200px;
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 20px;
+  
+}
+.host-header{
+  text-align: center;
+}
+.host-container{
+  display: flex;
+  gap:1.5rem;
+}
+.host-content .logos{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+ 
+
+}
+.logos>img{
+   border: 1px solid grey;
+   padding: 10px;
+   border-radius: 50%;
+}
 /* Responsive Styles */
 @media screen and  (max-width: 576px) {
     .nav-links{
