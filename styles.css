@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  color:#FFFFFF;
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1A0B2E;
+}
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 0px;
+  border-bottom: 1px rgba(251, 9, 180, 0.1) solid;
+}
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    gap:2rem;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  padding: 0.80rem 1rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: semi-bold;
+  cursor: pointer;
+}
+.banner{
+    max-width: 1600px;
+    width: 100%;
+    background-image: url(./assets/hero-bg.png);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    aspect-ratio: 1600/760;
+    padding-top: clamp(29px,6.31vw,101px);
+    background-size: contain;
+}
+.menu-icon{
+  display: none;
+}
+
+.banner-img {
+  position: relative;
+  margin-bottom: clamp(14.4px,2.5vw,40px);
+  max-width: 350px;
+  width: 21.88%;
+  margin: 0 auto;
+  text-align: center;
+}
+ .banner-img .frame-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.banner-img button{
+  position: absolute;
+  color: #1A0B2E;
+  font-weight: semi-bold;
+  font-size: 1.1rem;
+  background-color: #00FF88;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px;
+  top: 8%;
+  left: 66%;
+  box-shadow: 0px 3px 27px rgba(0, 255, 136, 0.5);
+}
+.banner-content h2{
+  font-size: 3.75rem;
+  font-weight: extra-bold;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.banner-content p{
+  
+  text-align: center;
+}
+.banner-content .banner-buttons{
+  display: flex;
+  gap:8px;
+  justify-content: center;
+}
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #00FF88;
+  color: #00FF88;
+  padding: 0.80rem 1rem;
+  border-radius: 25px;
+  font-weight: semi-bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+/* Responsive Styles */
+@media screen and  (max-width: 576px) {
+    .nav-links{
+      display: none;
+    }
+    .nav-container>button{
+      display: none;
+    }
+   
+    .menu-icon{
+      display: block;
+    }
+    
+    .banner-img .frame{
+      
+      width: 100%;
+
+    }
+    .banner-img .frame-content{
+      
+      object-fit: contain;
+      width: 100%;
+      height: 40%;
+    }
+    .banner-img button{
+      font-size: .8rem;
+      padding: 6px 12px;
+      top: 0%;
+      left: 65%;  
+      
+}
+.banner-content h2{
+    font-size: 2.25rem;
+    
+}
+ 
+}
