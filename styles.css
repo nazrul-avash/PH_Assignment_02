@@ -4,6 +4,7 @@
   font-optical-sizing: auto;
   font-size: 1rem;
   color:#FFFFFF;
+  font-weight: regular;
   
 }
 body {
@@ -82,6 +83,7 @@ a {
   top: 8%;
   left: 66%;
   box-shadow: 0px 3px 27px rgba(0, 255, 136, 0.5);
+  margin-bottom: clamp(29px,6.31vw,101px);
 }
 .banner-content h2{
   font-size: 3.75rem;
@@ -110,7 +112,111 @@ a {
   align-items: center;
   gap: 5px;
 }
+.about-container{
+  padding-top: 50px;
+  max-width: 1200px;
+  width: 75%;
+  padding-bottom: clamp(43px,6.3vw,101px);
+  margin: 0 auto;
+  text-align: center;
+}
+.about-content h2{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.about-content p{
+  width: 60%;
+  margin: 0 auto;
+  line-height: 20px;
+  margin-bottom: 5rem;
+  opacity: 0.8;
+}
+.about-content hr{
+  opacity: 0.1;
+  margin-bottom: 5rem;
+}
+.achievements{
+  display: flex;
+  justify-content: space-between;
+}
+.achievement h3{
+  font-size: 3rem;
+  color: #00FF88;
+  margin-bottom: 16px;
+}
+.achievement p{
+ 
+  line-height: 20px;
+  opacity: 0.8;
+}
+#reasons{
+  background-color: #230E3D;
+}
+.reason-container{
+  max-width: 1200px;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: clamp(36px,7.5vw,120px);
+}
+.reason-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  
+}
+.reason-card{
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 25px;
+  text-align: left;
+  padding: 40px 40px;
+  
+}
+.reason-card p{
+  line-height: 1.5rem;
+  opacity: .6;
+  
+}
+.item1{
+  grid-row: 1 / 3;
+  grid-column: 1;
+  
+}
+.item2{
+  grid-row: 1;
+  grid-column: 2 / 4;
+  
+  
+}
+.item3{
+  grid-row:2; 
+  grid-column: 2 / 4;
+}
+.item4{
+  grid-row: 3;
+  grid-column: 1 / 3;
+  
+}
+.item5{
+  grid-row: 3;
+  grid-column: 3;
+}
+.featured-container{
+  max-width: 1200px;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: clamp(36px,7.5vw,120px);
+  display: flex;
+  gap: 30px;
 
+}
+.card{
+  background-color: #250D44;
+  border-radius: 25px;
+  text-align: left;
+  padding: 20px;
+}
 
 /* Responsive Styles */
 @media screen and  (max-width: 576px) {
