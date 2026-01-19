@@ -332,18 +332,23 @@ a {
    border-radius: 50%;
 }
 /*Styles for footer*/
-.footer-content{
-  background-image: url(./assets/footer-bg.png);
+footer{
+ background-image: url(./assets/footer-bg.png);
   background-repeat: no-repeat;
-  max-width: 1600px;
   background-size: contain;
-  width: 100%;
   aspect-ratio: 1600/412;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
+.footer-content{
+  border: 1px solid red;
+  max-width: 1360px;
+  width: 85%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 .banner-logo{
   margin-bottom: 32px;
@@ -432,8 +437,9 @@ a {
      flex-direction: column;
      text-align: center;
 }
-  .footer-content{
-    
-  }
+  .footer-content>img{
+    width: 100%;
+    height: auto;
   
 }
+
