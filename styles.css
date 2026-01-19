@@ -333,33 +333,37 @@ a {
 }
 /*Styles for footer*/
 footer{
- background-image: url(./assets/footer-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  aspect-ratio: 1600/412;
-  display: flex;
-  align-items: center;
+  position: relative;
+  width: 100%;
+  
+}
+.footer-img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .footer-content{
-  border: 1px solid red;
-  max-width: 1360px;
-  width: 85%;
-  margin: 0 auto;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  
   
 }
 .banner-logo{
   margin-bottom: 32px;
 }
-.brands{
-  display: flex;
-  gap:32px; 
-}
+
 .brands .img-logo{
   display: flex;
   gap: 5px;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -377,7 +381,9 @@ footer{
   justify-content: center;
   align-items: center;
   text-align: center;
+  justify-items: center;
   margin-bottom: 2rem;
+  gap: 30px;
 }
 /* Responsive Styles */
 @media screen and  (max-width: 576px) {
@@ -402,33 +408,30 @@ footer{
         font-size: .8rem;
         padding: 6px 12px;
         top: 0%;
-        left: 65%;  
-        
-     }
-    .banner-content h2{
+        left: 65%;   
+      }
+      .banner-content h2{
         font-size: 2.25rem;
-    }
+      }
     .achievements{
-      
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
-    }
+      }
     .reason-container h1{
       padding: 0px 20px;
       font-size: 2rem;
       padding: 0 0;
-      border: 1px solid red;
-    }
+     }
     .reason-container{
       width: 90%;
-    }
+     }
     .reason-grid{
       grid-template-columns: repeat(1,1fr);
-    }
+     }
     .reason-grid>*{
       grid-column: auto;
       grid-row: auto;
-    }
+     }
     .featured-container{
       flex-direction: column;
 
@@ -436,10 +439,47 @@ footer{
     .host-container{
      flex-direction: column;
      text-align: center;
+     }
+footer {
+  padding: 120px 20px;
 }
-  .footer-content>img{
-    width: 100%;
-    height: auto;
-  
+.footer-img {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-content {
+  padding: 0 16px;
+}
+.banner-logo{
+      width: 40%;
+      height: auto;
+   }
+    .brands{
+    
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+      justify-items: center;
+      justify-content: center;
+     }
+     .img-logo{
+      text-align: center;
+    
+     }
+     .row2{
+      justify-self: right;
+      
+     }
+      .row3{
+      justify-self: left;
+      
+     }
+     .footer-content p{
+      margin-bottom: 10px;
+     }
+   
 }
 
