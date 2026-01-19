@@ -32,6 +32,7 @@ a {
   font-weight: semi-bold;
   cursor: pointer;
   transition: all 0.4s ease;
+  animation: pulse 2s infinite;
 }
 .btn-secondary:hover{
    transform: scale(1.05);       
@@ -52,8 +53,19 @@ a {
   display: flex;
   align-items: center;
   gap: 5px;
+  animation: pulse 2s infinite;
 }
-
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(92, 107, 192, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px rgb(184, 194, 46);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(182, 72, 197, 0.6);
+  }
+}
 
 
 /*navigation styles*/
