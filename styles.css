@@ -31,6 +31,15 @@ a {
   border-radius: 25px;
   font-weight: semi-bold;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+.btn-secondary:hover{
+   transform: scale(1.05);       
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.btn-primary:hover{
+   transform: scale(1.05);       
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 .btn-secondary {
   background-color: transparent;
@@ -287,8 +296,11 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
- align-items: center;
+    
+  
 }
+
+
 /*styles for host section*/
 #host{
   max-width: 1200px;
@@ -331,6 +343,8 @@ a {
    padding: 10px;
    border-radius: 50%;
 }
+
+
 /*Styles for footer*/
 footer{
   position: relative;
@@ -352,8 +366,6 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  
 }
 .banner-logo{
   margin-bottom: 32px;
@@ -377,7 +389,7 @@ footer{
 }
 .brands{
   display: grid;
-  grid-template-columns: repeat(4,auto);
+  grid-template-columns: repeat(2,auto);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -385,6 +397,13 @@ footer{
   margin-bottom: 2rem;
   gap: 30px;
 }
+.brands .group1,.group2{
+  display: flex;
+  gap: 30px;
+}
+
+
+
 /* Responsive Styles */
 @media screen and  (max-width: 576px) {
       .nav-links{
@@ -440,46 +459,45 @@ footer{
      flex-direction: column;
      text-align: center;
      }
-footer {
-  padding: 120px 20px;
-}
-.footer-img {
-  position: absolute;
-  inset: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+     .logos{
+       display: flex;
+       justify-content: center;
+     }
+    footer {
+      padding: 120px 20px;
+    }
+    .footer-img {
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .footer-content {
+      padding: 40px 20px;
+    }
+    .banner-logo{
+          width: 50%;
+          height: auto;
+          margin-bottom: 24px;
+      }
+    .brands{
+          padding-top: 30px;
+          grid-template-columns: repeat(1, auto);
+          gap: 10px;
+          
+        }
+        
+   
 }
 
-.footer-content {
-  padding: 0 16px;
-}
-.banner-logo{
-      width: 40%;
-      height: auto;
-   }
-    .brands{
-    
-      grid-template-columns: repeat(2, auto);
-      gap: 10px;
-      justify-items: center;
-      justify-content: center;
-     }
-     .img-logo{
-      text-align: center;
-    
-     }
-     .row2{
-      justify-self: right;
-      
-     }
-      .row3{
-      justify-self: left;
-      
-     }
-     .footer-content p{
-      margin-bottom: 10px;
-     }
-   
+@media (min-width: 577px) and (max-width: 992px) {
+
+  .banner-img .frame-content{
+        object-fit: contain;
+        width: 100%;
+        height: 40%;
+      }
+
 }
 
